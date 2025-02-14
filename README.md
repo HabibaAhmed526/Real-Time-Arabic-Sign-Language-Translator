@@ -1,16 +1,8 @@
-## Real-Time Arabic Sign Language Translator
+# Real-Time Arabic Sign Language Translator
 
+This repository contains a multi-module Python project that builds an Arabic Sign Language (ASL) recognition system using hand landmarks. The project includes:
 
-This AI-driven system combines sign language recognition, text translation, and text-to-speech capabilities to create an inclusive solution for improved communication. Here's what makes it special:
-
-
-✅ Deep Learning Architecture: Leveraged a fully connected neural network for accurate sign recognition and classification.
-
-
-✅ Decision Tree Algorithms: Integrated for enhanced decision-making processes, especially in handling ambiguous gestures.
-
-
-✅ Datasets from Kaggle: Harnessed robust Arabic Sign Language datasets to train the model, ensuring accuracy and scalability.
-
-
-✅ Real-Time Performance: Seamlessly translates sign language gestures into text and speech, empowering accessibility.
+• A dataset creation script using MediaPipe to extract hand landmarks from images
+• A machine learning training script that trains a RandomForest classifier on the landmarks
+• A real-time detection module that uses a webcam to recognize ASL gestures
+• A GUI application built with CustomTkinter that displays the video feed, the predicted text, and includes a Text-To-Speech (TTS) function for audio playback
